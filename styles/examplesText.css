@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+}
+
+
+p {
+    font-family: Arial;
+}
+
+    .css-e1 {
+        margin-top: 50px;
+        background-color: rgb(227, 65, 64);
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        border-radius: 2;
+    }
+
+    .HOME-link:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+a {
+    font-family: Arial;
+    color: white
+}

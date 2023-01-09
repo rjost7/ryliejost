@@ -2,21 +2,165 @@
 <html>
     <head>
         <title>Ryie Jost</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
     </head>
 
+<style>
+    p {
+        font-family: cabin;
+    }
+
+    body {
+        background-color: black;
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<style>
+    .main-paragraph {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 0px;
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-bottom: 0px;
+        color:rgb(144, 144, 144);
+        width: 100;
+    }
+
+    .JOST {
+        font-family: bungee shade;
+        color:antiquewhite;
+    }
+
+    .main-header {
+        background-color: rgba(0, 0, 0, .4);
+        background-image: url(pee.webp);
+        background-blend-mode: multiply;
+        background-size: cover;
+    }
+
+
+    .title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+
+.title-word-2 {
+  --color-1: #DBAD4A;
+  --color-2: #ACCFCB;
+  --color-3: #17494D;
+}
+
+.title-word-3 {
+  --color-1: #ACCFCB;
+  --color-2: #E4A9A8;
+  --color-3: #ACCFCB;
+}
+
+.title-word-4 {
+  --color-1: #3D8DAE;
+  --color-2: #DF8453;
+  --color-3: #E4A9A8;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+/* Here are just some visual styles. 🖌 */
+
+.container {
+  display: grid;
+  place-items: left;  
+  text-align: center;
+  width: 99vw;
+  height: 80vh;
+}
+
+.title {
+  font-family: bungee shade;
+  font-weight: 800;
+  font-size: 15vw;
+  text-transform: uppercase;
+}
+
+.nav li {
+    display: inline;
+    padding: 0 5%;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color:rgb(144, 144, 144);
+    text-decoration: none;
+    font-family: cabin;
+}
+
+.nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+</style>
+
     <body>
-        <header>
-            <nav>
+        <header class="main-header">
+            <nav class="nav" style="font-size:30px;">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
+                <li><a href="explore.html">EXPLORE</a></li>
             </nav>
-            <h1 style="font-size:100px;">JOST</h1>
+            
+            <div class="container">
+                <h1 class="title">
+                    <span class="title-word title-word-1">J</span>
+                    <span class="title-word title-word-2">O</span>
+                    <span class="title-word title-word-3">S</span>
+                    <span class="title-word title-word-4">T</span>
+                </h1>
+            </div>
+
+
+            
+            <!-- <h1 class="JOST" style="font-size:150px;">JOST</h1> -->
+
         </header>
 
         <section>
             <!--<strong><h1>About</h1></strong>-->
             <hr>
-            <p>
+            <p class="main-paragraph">
                 My name is Rylie Jost and this is my portfolio website.
             </p>
         </section>
