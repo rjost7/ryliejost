@@ -26,3 +26,40 @@ a {
     font-family: Arial;
     color: white
 }
+
+
+
+
+.loading-animation {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  overflow: hidden;
+  position: relative;
+  font-family: Arial;
+}
+
+.spinner-sector {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  border: 10px solid transparent;
+  border-top-color: blue;
+  border-bottom-color: orange;
+  
+  animation: rotate 1000ms ease-in-out infinite;
+  
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
